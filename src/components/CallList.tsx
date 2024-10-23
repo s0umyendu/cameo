@@ -57,6 +57,8 @@ export default function CallList({type}:{type: 'upcoming' | 'previous' | 'record
     setRecords(callRecordings)
    }
    catch(error){
+    console.log(error);
+    
     toast({ title: 'Please try again later' }); 
   }
 
