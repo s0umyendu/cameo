@@ -62,7 +62,9 @@ const[callDetail, setCallDetail]= useState<Call>();
             },
           },
         });
-      } catch (error) {
+        
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      } catch (error:any) {
         console.error('Error creating call:', error);
         toast({ title: 'Failed to create meeting', description: error.message });
       }
@@ -111,6 +113,7 @@ const[callDetail, setCallDetail]= useState<Call>();
 
               <DatePicker className='bg-slate-900 p-2 rounded-md'
         selected={values.dateTime}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onChange={ (date:any) => {
           setValues((prevValues) => ({
             ...prevValues,

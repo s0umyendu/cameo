@@ -53,7 +53,7 @@ export default function CallList({type}:{type: 'upcoming' | 'previous' | 'record
      
     const callRecordings = callData.filter((call)=> call.recordings.length >0).
     flatMap((call)=> call.recordings)
-  
+   
     setRecords(callRecordings)
    }
    catch(error){
