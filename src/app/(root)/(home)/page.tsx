@@ -8,7 +8,7 @@ export default function Page() {
        <div className=' h-full justify-start  flex flex-col '>
    <div className=' h-full justify-around  flex flex-col'>
 
-   <p>  Upcoming meeting at 12:30 PM </p>
+   <p>  no meeting at 12:30 PM </p>
 
 <p> 12:40 PM</p>
 
